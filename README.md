@@ -11,13 +11,3 @@ Python script to convert Subtitle formats from `.srt` to `.ass`.
 ```
 $ python srt2ass.py "file"
 ```
-
-## Sample
-### using command line
-```
-$ python srt2ass.py file1.srt
-```
-or
-```
-$ python srt2ass.py file1.srt file2.srt file3.srt
-```
