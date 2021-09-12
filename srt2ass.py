@@ -57,7 +57,7 @@ def srt2ass(input_file):
 
     for ln in range(len(lines)):
         line = lines[ln]
-        if line.isdigit() and re.match(r'-?\d\d:\d\d:\d\d', lines[(ln+1)]):
+        if line.isdigit() and (ln+1) <= (len(lines)-1) and re.match(r'-?\d\d:\d\d:\d\d', lines[(ln+1)]):
             if tmp_lines:
                 sub_lines += tmp_lines + "\n"
             tmp_lines = ''
